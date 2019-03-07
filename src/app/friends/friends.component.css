@@ -1,0 +1,15 @@
+.choiceBtn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(61, 91, 138);
+    color: white;
+}
+.spaceBetweenLi{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sendRequest{
+    margin-top: 20px;
+    background-color: rgb(61, 91, 138);
+    color: white;
+}

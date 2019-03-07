@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img width="150" alt="Bitcube" src="../../assets/img/bitcubeLOGO.png">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link cursors" (click)="profileUser()">Profile</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link cursors">Friends</a>
+      </li>
+
+    </ul>
+    <div class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="" class="nav-link cursors">Logout</a>
+      </li>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 textCenter">
+      <h1 class="generalColor headerMargin">Welcome {{userName}}</h1>
+      <hr width="65%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 textCenter">
+      <h3 class="generalColor headerMargin">Your Friends:</h3>
+      <h6 class="generalColor headerMargin">These are your current best friends.</h6>
+      <hr width="65%">
+      <ul class="list-group registerBlock">
+        <li class="list-group-item" *ngFor="let friend of friends">
+          {{friend.fname}} {{friend.lname}} - {{friend.email}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-4 textCenter">
+      <h3 class="generalColor headerMargin">Potential Friends?:</h3>
+      <h6 class="generalColor headerMargin">Ask someone to become your friend!</h6>
+      <hr width="65%">
+      <ul class="list-group registerBlock">
+        <li class="list-group-item spaceBetweenLi" *ngFor="let notFriend of notFriends">
+          {{notFriend.fname}} {{notFriend.lname}} - {{notFriend.email}}
+          <br>
+          <input class="btn sendRequest" type="button" value="Send Request">
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-4 textCenter">
+      <h3 class="generalColor headerMargin">Friend Requests:</h3>
+      <h6 class="generalColor headerMargin">You can accept or decline friends requests.</h6>
+      <hr width="65%">
+      <ul class="list-group registerBlock">
+        <li class="list-group-item spaceBetweenLi" *ngFor="let friendRequest of friendRequests">
+          {{friendRequest.fname}} {{friendRequest.lname}} - {{friendRequest.email}}
+          <br>
+          <input class="btn choiceBtn" type="button" value="Accept">
+          <input class="btn choiceBtn" type="button" value="Decline">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

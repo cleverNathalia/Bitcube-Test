@@ -1,0 +1,74 @@
+
+
+.generalColor {
+    color: rgb(61, 91, 138);
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.blockPadding {
+    padding: 15px;
+}
+
+.cube {
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.loginBlock {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.submitBtn {
+    color: white;
+    background-color: rgb(61, 91, 138);
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.info{
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 35px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(61, 91, 138);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 70%;
+    margin-left: -60px;
+  }
+  
+  .info:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+@media only screen and (max-width: 767px) {
+    .cube{
+        border-radius: 50px;
+        margin-top: 30px;
+    }
+  }

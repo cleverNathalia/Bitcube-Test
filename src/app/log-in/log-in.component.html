@@ -1,0 +1,36 @@
+<div class="alignCenter blockPadding">
+  <img width="300" alt="Bitcube" src="../../assets/img/bitcubeLOGO.png">
+  <h1 class="generalColor">Welcome to Bitcube's log in page</h1>
+  <hr width="65%">
+
+  <form action="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 loginBlock">
+          <label>Email: </label>
+          <br>
+          <input [(ngModel)]="email" name= "email" type="email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" size="30" required placeholder="Email Address">
+          <br>
+          <label>Password: </label>
+          <br>
+          <input [(ngModel)]="passw" name= "passw" type="password" size="30" required placeholder="Password">
+          <br>
+          <input class="btn submitBtn" (click)="onSubmit()" type="submit" title="Click Here to Log In" value="Log In">
+          <br>
+          <input type="checkbox"> Remember me?
+        </div>
+        
+        <div class="col-lg-12 col-md-12 ">
+          <img width="300" class="cube" alt="Cube" src="../../assets/img/signIn.gif">
+        </div>
+      </div>
+      <div class="row">
+        <div class="container signin">
+          <p>Don't have an account?
+            <a routerLink="../register" title="Click Here to go to the Log In Page">Register</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

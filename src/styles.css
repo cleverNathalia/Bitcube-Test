@@ -1,0 +1,51 @@
+@font-face {
+    font-family: generalFont;
+    src: url("app/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: generalFontLight;
+    src: url("app/fonts/OpenSans-Light.ttf");
+}
+
+body {
+    font-family: generalFontLight;
+}
+
+nav {
+    padding: 15px;
+    color: rgb(61, 91, 138) !important;
+}
+
+input {
+    margin: 15px;
+    padding: 8px;
+}
+
+label {
+    color: rgb(61, 91, 138);
+}
+
+.registerBlock {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.headerMargin {
+    margin-top: 30px;
+}
+
+.generalColor {
+    color: rgb(61, 91, 138);
+}
+
+.textCenter {
+    text-align: center;
+}
+.textAlignLeft{
+    text-align: left;
+}
+
+.cursors{
+    cursor: pointer;
+}

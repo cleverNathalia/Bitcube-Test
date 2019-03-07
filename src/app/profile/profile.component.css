@@ -1,0 +1,64 @@
+#newPass{
+    display: none;
+}
+
+.info {
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 35px;
+}
+
+.updateBtn {
+    color: white;
+    background-color: rgb(61, 91, 138);
+}
+
+.alignCenter {
+    text-align: center;
+}
+.check{
+    width: 400px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(61, 91, 138);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 72%;
+    left: 62%;
+    margin-left: -60px;
+}
+
+.info:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 767px) {
+    .check{
+        width: 300px;
+    }
+    .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgb(61, 91, 138);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        font-size: 12px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 72%;
+        left: 76%;
+        margin-left: -60px;
+    }
+  }
